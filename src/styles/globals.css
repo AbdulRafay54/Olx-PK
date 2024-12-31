@@ -2,20 +2,80 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body{
+    font-family: Roboto,Helvetica,sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Navbar ki style */
+
+.sellbutton{
+    border-radius: 30px;
+    background-color: #f7f8f8;
+    border-bottom: 4px solid blue;
+    border-top: 4px solid#23e5db;
+    border-left: 4px solid yellow ;
+    border-right: 4px solid blue ;
+    font-weight: 700;
+    font-family: Roboto,Helvetica,sans-serif;
+    width: 110px;
+    margin-right: 50px;
+}
+
+.loginbtn{
+    text-decoration: underline;
+    text-decoration-thickness:2px ;
+    text-underline-offset: 4px; 
+}
+.loginbtn:hover{
+    text-decoration: none;
+   
+}
+
+/* Cards style */
+
+.olx-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%; 
+    max-width: 300px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    transition: transform 0.2s;
   }
-}
+  
+  .olx-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .olx-card-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .olx-card-details {
+    padding: 15px;
+  }
+  
+  .olx-card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .olx-card-price {
+    font-size: 16px;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .olx-card-location {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .allow{
+    font-weight: 600;
+  }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+
