@@ -4,6 +4,7 @@ import Crousel from './Crousel/page'
 import Categories from './Allcategories/page'
 import Allcards from './AllCards/page'
 import Login from './Login/page'
+import Footer from './Footer/page'
 
 const index = () => {
   return (
@@ -12,6 +13,7 @@ const index = () => {
  <Crousel/>
  <Categories/>
  <Allcards/>
+ <Footer/>
  </>
   )
 }

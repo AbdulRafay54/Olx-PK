@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['cdn.dummyjson.com'], // External image hostname
+    domains: ['cdn.dummyjson.com', 'www.olx.com.pk', ],
   },
 };
 
