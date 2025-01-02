@@ -9,7 +9,7 @@ body{
 /* Navbar ki style */
 
 .sellbutton{
-    border-radius: 30px;
+    /* border-radius: 30px;
     background-color: #f7f8f8;
     border-bottom: 4px solid blue;
     border-top: 4px solid#23e5db;
@@ -17,7 +17,7 @@ body{
     border-right: 4px solid blue ;
     font-weight: 700;
     font-family: Roboto,Helvetica,sans-serif;
-    width: 110px;
+    width: 110px; */
     margin-right: 50px;
 }
 

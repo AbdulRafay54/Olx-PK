@@ -36,7 +36,6 @@ const Navbar = () => {
   const toggleMobileSearch = () => setIsMobileSearchOpen(!isMobileSearchOpen);
   const [showAlert, setShowAlert] = useState(true);
 
-
   return (
     <>
       {showAlert && (
@@ -173,15 +172,16 @@ const Navbar = () => {
 
             {/* Sell Buttons */}
             <div className="hidden md:flex items-center gap-3 mr-20">
-              <Link href="Login">
+              <Link href="/Login">
                 <button className="loginbtn text-sm px-4 py-2 font-semibold">
                   Login
                 </button>
               </Link>
-              <button className="sellbutton flex items-center gap-2 px-4 py-2 border-2 rounded-md text-sm font-semibold bg-[#f1f1f1]">
-                <FaPlus />
-                <span>SELL</span>
-              </button>
+              <Image
+              src={"/images/sell.png"}
+              width={80}
+              height={80}
+              className="sellbutton flex items-center gap-2 h-12 w-full    " />
             </div>
           </div>
           <hr className="mt-4" />
@@ -194,7 +194,7 @@ const Navbar = () => {
                 onClick={toggleMenu}
                 aria-label="Close menu"
               >
-                <FaTimes className="h-8 w-6 ml-72 text-gray-700" />
+                <FaTimes className="h-8 w-6 text-gray-700 " />
               </button>
               <div className="mt-4">
                 <label className="block text-sm font-semibold mb-2">
