@@ -142,7 +142,7 @@ const Navbar = () => {
 
             {/* Desktop Search Section */}
             <div className="hidden md:flex items-center flex-1 gap-4 ml-28">
-              <div className="relative w-full md:w-[280px] lg:w-[300px]">
+              <div className="relative w-full md:w-[280px] lg:w-[300px] focus:border-blue-500 focus:outline-none ">
                 <FaMapMarkerAlt className="absolute left-3 top-1/2 transform -translate-y-1/2 text-black" />
                 <select
                   className="w-full h-12 pl-10 pr-8 py-2 border-2 rounded-md text-sm"
@@ -172,7 +172,7 @@ const Navbar = () => {
 
             {/* Sell Buttons */}
             <div className="hidden md:flex items-center gap-3 mr-20">
-              <Link href="/Login">
+              <Link href="/login">
                 <button className="loginbtn text-sm px-4 py-2 font-semibold">
                   Login
                 </button>

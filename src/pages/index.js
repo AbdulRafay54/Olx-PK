@@ -3,7 +3,7 @@ import Navbar from './Navbar/page'
 import Crousel from './Crousel/page'
 import Categories from './Allcategories/page'
 import Allcards from './AllCards/page'
-import Login from './Login/page'
+import Login from './login/login'
 import Footer from './Footer/page'
 
 const index = () => {
