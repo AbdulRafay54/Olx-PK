@@ -18,19 +18,23 @@ const Navbar = () => {
   const [isMobileSearchOpen, setIsMobileSearchOpen] = useState(false);
 
   useEffect(() => {
-    const fetchCountries = async () => {
-      try {
-        const response = await fetch("https://restcountries.com/v3.1/all");
-        const data = await response.json();
-        const countryNames = data.map((country) => country.name.common);
-        setCountries(countryNames);
-      } catch (error) {
-        console.error("Error fetching countries:", error);
+  const fetchCountries = async () => {
+    try {
+      const response = await fetch("https://restcountries.com/v3.1/all");
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
       }
-    };
+      const data = await response.json();
+      console.log("Fetched data:", data); 
+      const countryNames = data.map((country) => country.name.common);
+      setCountries(countryNames);
+    } catch (error) {
+      console.error("Error fetching countries:", error);
+    }
+  };
 
-    fetchCountries();
-  }, []);
+  fetchCountries();
+}, []);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const toggleMobileSearch = () => setIsMobileSearchOpen(!isMobileSearchOpen);
